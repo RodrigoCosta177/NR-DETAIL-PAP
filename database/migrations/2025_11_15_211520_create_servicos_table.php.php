@@ -11,7 +11,7 @@ return new class extends Migration
        Schema::create('servicos', function (Blueprint $table) {
     $table->id();
     $table->string('nome');
-    $table->text('Tipo de Servico');   // <--- esta é a coluna que está a faltar
+    $table->text('Tipo de Servico');   
     $table->decimal('preco', 10, 2);
     $table->timestamps();
 });

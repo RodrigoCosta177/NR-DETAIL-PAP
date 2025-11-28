@@ -10,6 +10,10 @@ use App\Http\Controllers\StandController;
 Route::get('/', function () {
     return redirect()->route('servicos.index');
 });
+Route::get('/', function () {
+    return view('home');
+});
+
 
 // Rotas Resource
 Route::resource('servicos', ServicoController::class);
